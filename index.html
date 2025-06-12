@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For u my Darling ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<!-- 
+    This website has 5 sections:
+    1. Landing page with Akanksha's name and a heart animation
+    2. Memories section with sweet messages
+    3. Reasons section showing why she is loved
+    4. Fun facts section with humorous content
+    5. Final proposal section with Yes/No buttons (No button runs away!)
+-->
+<body>
+    <!-- Background music that starts playing when user interacts -->
+    <audio id="background-music" loop>
+        <source src="love.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="music-btn">🔊</button>
+    
+    <!-- Background animated bubbles -->
+    <div class="bubble" style="width: 80px; height: 80px; top: 10%; left: 10%;"></div>
+    <div class="bubble" style="width: 50px; height: 50px; top: 20%; left: 80%; animation-delay: 1s;"></div>
+    <div class="bubble" style="width: 40px; height: 40px; top: 60%; left: 70%; animation-delay: 3s;"></div>
+    <div class="bubble" style="width: 100px; height: 100px; top: 40%; left: 25%; animation-delay: 2s;"></div>
+    <div class="bubble" style="width: 60px; height: 60px; top: 80%; left: 50%; animation-delay: 4s;"></div>
+    <div class="bubble" style="width: 70px; height: 70px; top: 75%; left: 20%; animation-delay: 2.5s;"></div>
+    <div class="bubble" style="width: 30px; height: 30px; top: 30%; left: 90%; animation-delay: 1.5s;"></div>
+    <div class="bubble" style="width: 90px; height: 90px; top: 85%; left: 85%; animation-delay: 3.5s;"></div>
+    <div class="bubble" style="width: 45px; height: 45px; top: 40%; left: 60%; animation-delay: 0.5s;"></div>
+    <div class="bubble" style="width: 65px; height: 65px; top: 15%; left: 40%; animation-delay: 1.8s;"></div>
+    
+    <div class="container">
+        <div id="landing" class="section active">
+            <h1 class="animate__animated animate__fadeIn">Akanksha</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">My Heart, My Everything</p>
+            <div class="cute-container animate__animated animate__pulse animate__infinite">
+                <div class="teddy-bear">
+                    <div class="teddy-face">
+                        <div class="teddy-ears"></div>
+                        <div class="teddy-eyes"></div>
+                        <div class="teddy-nose"></div>
+                        <div class="teddy-mouth"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="next-btn" class="btn animate__animated animate__fadeIn animate__delay-2s">Click Here</button>
+        </div>
+
+        <div id="memories" class="section">
+            <h2 class="animate__animated animate__fadeInDown">Our Journey</h2>
+            <div class="memory-container">
+                <div class="memory animate__animated">
+                    <div class="memory-content">
+                        <p>The first time I saw you, time stood still.</p>
+                        <!-- You can add real photos here -->
+                        <div class="photo-placeholder">
+                            <div class="polaroid">
+                                <div class="polaroid-content">
+                                    <span>📷 Add your photo here</span>
+                                </div>
+                                <p class="polaroid-caption">First Meeting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory animate__animated">
+                    <div class="memory-content">
+                        <p>Every moment with you makes my life complete.</p>
+                        <div class="photo-placeholder">
+                            <div class="polaroid">
+                                <div class="polaroid-content">
+                                    <span>📷 Add your photo here</span>
+                                </div>
+                                <p class="polaroid-caption">Special Moments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory animate__animated">
+                    <div class="memory-content">
+                        <p>Your smile lights up my darkest days.</p>
+                        <div class="photo-placeholder">
+                            <div class="polaroid">
+                                <div class="polaroid-content">
+                                    <span>📷 Add your photo here</span>
+                                </div>
+                                <p class="polaroid-caption">Your Smile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="btn next-section">Continue</button>
+            </div>
+        </div>
+
+        <div id="reasons" class="section">
+            <h2 class="animate__animated animate__fadeInDown">Why I Love You</h2>
+            <div id="reasons-container"></div>
+            <div class="button-container">
+                <button class="btn next-section">Continue</button>
+            </div>
+        </div>
+
+        <div id="funny" class="section">
+            <h2 class="animate__animated animate__fadeInDown">Some Fun Facts</h2>
+            <div class="fun-container">
+                <div class="fun-fact animate__animated">
+                    <p>Scientists confirm you're the cutest person in the universe! 🔍</p>
+                </div>
+                <div class="fun-fact animate__animated">
+                    <p>My heart rate increases by 250% when I see your texts! ❤️📱</p>
+                </div>
+                <div class="fun-fact animate__animated">
+                    <p>I've calculated that I think about you approximately 1,440 times per day! 🧮</p>
+                </div>
+                <div class="fun-fact animate__animated special-counter">
+                    <p>I've been in love with you for:</p>
+                    <div id="love-counter">
+                        <span id="love-days">0</span> days,
+                        <span id="love-hours">0</span> hours,
+                        <span id="love-minutes">0</span> minutes,
+                        <span id="love-seconds">0</span> seconds
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="btn next-section">Continue</button>
+            </div>
+        </div>
+
+        <div id="proposal" class="section">
+            <h2 class="animate__animated animate__fadeInDown">Akanksha</h2>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">You're the most amazing person I've ever met.</p>
+            <p class="animate__animated animate__fadeIn animate__delay-2s">Every moment with you is magical.</p>
+            <p class="animate__animated animate__fadeIn animate__delay-3s">I can't imagine my life without you.</p>
+            
+            <!-- Typing effect for personal message -->
+            <div class="typing-container animate__animated animate__fadeIn animate__delay-3s">
+                <div id="typed-text" class="typed-text"></div>
+            </div>
+            
+            <div class="final-question animate__animated animate__fadeIn animate__delay-4s">
+                <p>Will you be mine forever?</p>
+                <div class="answer-buttons">
+                    <button id="yes-btn" class="btn yes-btn">Yes</button>
+                    <button id="no-btn" class="btn no-btn">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="celebration" class="celebration">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="heart-burst-container">
+            <div class="heart-burst"></div>
+            <div class="heart-burst"></div>
+            <div class="heart-burst"></div>
+            <div class="heart-burst"></div>
+            <div class="heart-burst"></div>
+            <div class="heart-burst"></div>
+            <div class="heart-burst"></div>
+            <div class="heart-burst"></div>
+        </div>
+        <div class="confetti-container"></div>
+        <div class="message">
+            <h1>I LOVE YOU AKANKSHA!</h1>
+            <p>You've made me the happiest person alive! ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
