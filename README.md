@@ -4,7 +4,7 @@ This is a beautiful, animated website designed to express love and propose to Ak
 
 ## Features
 
-- Animated landing page with Akanksha's name
+- Animated landing page with  name
 - Beautiful gradient background with animated effects
 - Multiple sections showcasing memories, reasons for love, and fun facts
 - Interactive "No" button that runs away from the cursor
@@ -59,6 +59,6 @@ You can personalize this website further by:
 
 ## Make It Special!
 
-Show this to Akanksha in a quiet and romantic setting for the best effect. Consider having something special prepared for after she sees the website, like a small gift, flowers, or a romantic dinner.
+Show this to your love in a quiet and romantic setting for the best effect. Consider having something special prepared for after she sees the website, like a small gift, flowers, or a romantic dinner.
 
 Good luck with your proposal! ❤️ 
