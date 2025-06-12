@@ -1,6 +1,6 @@
-# Love Proposal Website for Akanksha
+# Love Proposal Website for your love
 
-This is a beautiful, animated website designed to express love and propose to Akanksha. The website features multiple interactive sections, animations, and a special proposal at the end.
+This is a beautiful, animated website designed to express love and propose to your love. The website features multiple interactive sections, animations, and a special proposal at the end.
 
 ## Features
 
